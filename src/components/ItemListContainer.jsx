@@ -22,6 +22,7 @@ const ItemListContainer = () => {
                         return { ...doc.data(), id: doc.id }
                     })
                 )
+                categoria ? setTitulo(categoria) : setTitulo('Productos')
             })
 
     }, [categoria])
